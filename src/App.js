@@ -1,6 +1,6 @@
 import './App.css';
 import PinCodeForm from './PinCodeForm';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Info from './Info';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         const data = await response.json();
         setLocation(data);
       } else {
-        if (postalCode.length != 6 || isNaN(postalCode))
+        if (postalCode.length !== 6 || isNaN(postalCode))
           setError('You Enter The Wrong Pin code');
         else setError('Location not found');
       }
