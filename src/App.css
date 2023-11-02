@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #313131;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.171) 2px,
+    transparent 0
+  );
+  background-size: 30px 30px;
+  background-position: -5px -5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  border-radius: 88px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 19px 19px 51px #898989, -19px -19px 51px #ffffff;
+  margin-top: 2cm;
+  margin-bottom: 1cm;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.code {
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  margin-bottom: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', white;
+  background-color: #000;
+  outline-offset: 3px;
+  padding: 10px 1rem;
+
+  transition: 0.25s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.code:focus {
+  outline-offset: 5px;
+}
+
+.btn {
+  width: 120px;
+  height: 40px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline-offset: 5px;
+}
+
+.card {
+  display: flex;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px 30px;
+  gap: 5px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
 }
 
-.App-link {
-  color: #61dafb;
+.bold-text {
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heading {
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: 800;
+  color: rgb(104, 104, 104);
+}
+
+.description {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 600;
+  color: rgb(99, 99, 99);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  margin-left: 5cm;
+  margin-right: 5cm;
 }
